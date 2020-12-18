@@ -12,7 +12,7 @@ const Destroy = () => {
     const { setNotification } = useContext(NotificationContext);
 
     useEffect(() => {
-        Axios.post(`${globalStore.REACT_APP_ENDPOINT}/wishs/destroy`, { _id: id, secret_token: (user && user.token) })
+        Axios.post(`${globalStore.REACT_APP_ENDPOINT}/wishs/destroy`, { _id: id })
             .then(() => {
                 setNotification(`Wish was destroyed successfully.`);
             })
