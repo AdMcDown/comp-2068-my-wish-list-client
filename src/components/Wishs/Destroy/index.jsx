@@ -7,7 +7,6 @@ import { NotificationContext } from '../../shared/Notifications';
 
 const Destroy = () => {
     const { id } = useParams();
-    const { user } = useContext(UserContext);
     const { globalStore } = useContext(GlobalStoreContext);
     const { setNotification } = useContext(NotificationContext);
 
