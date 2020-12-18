@@ -1,7 +1,6 @@
 import Axios from 'axios';
 import React, { useEffect, useContext } from 'react';
 import { Redirect, useParams } from 'react-router-dom';
-import { UserContext } from '../../Authentication/UserProvider';
 import { GlobalStoreContext } from '../../shared/Globals';
 import { NotificationContext } from '../../shared/Notifications';
 
